@@ -1,0 +1,65 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/images/train-1.png");
+    background-size: cover;
+    opacity: 0.50;
+    z-index: -1;
+    pointer-events: nonw;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#increment-btn {
+    background: darkred;
+    box-shadow: 2px 2px rgb(71, 0, 0);
+}
+
+#increment-btn:active {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+
+#save-btn {
+    background: darkgreen;
+    box-shadow: 2px 2px rgb(0, 53, 0);
+}
+
+#save-btn:active {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+
+#app {
+    width: 400px;
+}
